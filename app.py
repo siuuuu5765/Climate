@@ -54,10 +54,7 @@ try:
     st.session_state['predictions'] = df
 
 except Exception as e:
-    st.error(f\"Error fetching real data: {e}\")
-
-    except Exception as e:
-        st.error(f"Error fetching data: {e}")
+    st.error(f"Error fetching real data: {e}")
 
 # --- Map and Charts ---
 if 'predictions' in st.session_state:
