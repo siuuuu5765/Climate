@@ -24,7 +24,6 @@ if st.sidebar.button("🔄 Refresh Predictions"):
 # --- Placeholder for backend data ---
 if 'fetch' in st.session_state:
     st.info(f"Fetching predictions for {region} using {model_choice} model...")
-    try:
         # Fetch real satellite-derived climate data from NASA POWER API
 try:
     lat, lon = 20.0, 78.0  # Center of India; you can later link to map clicks
